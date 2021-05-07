@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Combinators 1-qism</title>
+	<style type="text/css">
+		div p {
+			background-color: yellow;
+		}
+		section > p {
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<h2>Avlod (descendant) selektori</h2>
+	<p>Belgilangan elementning avlodlari bo'lgan barcha elementlarni tanlab oladi.</p>
+	<div>
+		<p>Paragraph 1: 'div'ni ichida.</p>
+		<p>Paragraph 2: 'div'ni ichida.</p>
+		<nav>
+			<p>Paragraph 3: 'div'ni ichida.</p>
+		</nav>
+	</div>
+
+	<p>Paragraph 4: 'div'ni ichida emas.</p>
+	<p>Paragraph 5: 'div'ni ichida emas.</p>
+	<hr>
+
+	<h2>Farzand (child) selektori</h2>
+	<p>Belgilangan elementning farzandlari bo'lgan barcha elementlarni tanlaydi</p>
+	<section>
+		<p>Paragraph 1: 'section'ni ichida.</p>
+		<p>Paragraph 2: 'section'ni ichida.</p>
+		<section>
+			<p>Paragraph 3: 'section'ni ichida.</p>
+		</section>
+		<p>Paragraph 4: 'section'ni ichida</p>
+	</section>
+
+	<p>Paragraph 5: 'section'ni ichida emas.</p>
+	<p>Paragraph 6: 'section'ni ichida emas.</p>
+</body>
+</html>

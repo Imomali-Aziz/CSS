@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text-decoration. Pseudo klasslar va qoidalarni yaxshilash</title>
+		<style type="text/css">
+			.hover_p, .active_p {
+				display: block;
+			}
+
+			.heading-1 {
+				text-decoration: underline;
+			}
+
+			.heading-2 {
+				text-decoration: line-through;
+			}
+
+			.hover_p:hover {
+				background-color: black;
+				color: cyan;
+				text-align: center;
+			}
+
+			.active_p:active {
+				background-color: orange;
+				color: green;
+			}
+
+			/*Tashrif buyurilmagan link*/
+			a:link {
+				color: #FF0000;
+			}
+
+			/*Tashrif buyurilgan link*/
+			a:visited {
+				color: #00FF00;
+			}
+
+			a:hover {
+				color: #FF00FF;
+			}
+
+			a:active {
+				color: #0000FF;
+			}
+
+			p {
+			  display: none;
+			  background-color: yellow;
+			  padding: 20px;
+			}
+
+			div:hover p {
+				display: block;
+			}
+
+			p:first-child {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="heading-1">Ostiga chizilgan matn</h1>
+		<h2 class="heading-2">Ustiga chizilgan matn</h2>
+		<p class="hover_p">Ustiga sichqoncha olib keling</p>
+		<p class="active_p">Ustiga sichqoncha bilan bosing</p>
+
+		<a href="./portfolio" class="link-1">Link 1</a>
+		<a href="./7-inheritance.html" class="link-2">Link 2</a>
+
+		<div>
+			Meni ustimga sichqonchani olib kel
+			<p>Tadaam! Men bu yerdaman :)</p>
+		</div>
+	</body>
+</html>
